@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    background: linear-gradient(to left,red,black);
+}
+.GodFather img{
+width: 300px;
+height: 400px;
+border-radius: 10%;
+box-shadow: 0px 0px 20px white;
+margin-top: 13%;
+margin-left: 38%;
+}
