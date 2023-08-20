@@ -2,13 +2,50 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-    background: linear-gradient(to left,red,black);
+}
+body{
+    background-color: gray;
+}
+header{
+    background-color: black;
+    height: 200px;
+    width: 100%;
+    background-color: gray;
+}
+#header img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 20px;
+    box-shadow: 0px 0px 20px black;
+}
+#header{
+    display: flex;
+    align-items: center;
+}
+#div{
+    margin-left: 35%;
+    margin-top: -5%;
+    color: black;
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+}
+#div2{
+    background-color: white;
+    color: black;
 }
 .GodFather img{
 width: 300px;
 height: 400px;
 border-radius: 10%;
-box-shadow: 0px 0px 20px white;
-margin-top: 13%;
+box-shadow: 0px 0px 30px black;
+margin-top: -2%;
 margin-left: 38%;
+
+}
+.GodFather{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
