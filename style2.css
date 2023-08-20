@@ -1,0 +1,30 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: gray;
+}
+#card{
+    position: relative;
+    width: 200px;
+    height: 300px;
+ border: 1px solid black;
+    border-radius: 10px;
+background-color: black;
+}
+#mdiv{
+    margin-top: 20px;
+    margin-left: 30px;
+}
+#div{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+img{
+    border-radius: 10px;
+    width: 199px;
+    height: 250px;
+}
