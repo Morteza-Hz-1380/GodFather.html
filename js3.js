@@ -16,33 +16,68 @@ shuffleStrings(items);
 const cardContainer = document.querySelector(".card_container");
 for (let index = 0; index < items.length; index++) {
   const element = items[index];
-  var myCard = document.createElement("div");
-  myCard.setAttribute("class", "card");
 
-  var thePic = document.createElement("img");
-  thePic.setAttribute("src", `image/${element}.PNG`);
-  thePic.setAttribute("alt", "");
-  // next part of input div
-  var myDiv = document.createElement("div");
-  myDiv.setAttribute("id", "input");
+  const backcardImage = document.createElement("img");
+  const cardImage = document.createElement("img");
 
+  backcardImage.setAttribute("src", `image/${element}.PNG`);
+  cardImage.setAttribute("src", `image/card.PNG`);
 
-  var theInput = document.createElement("input");
-  theInput.setAttribute("type", "text");
-  theInput.setAttribute("placeholder" , "Enter Your Name")
+  const cardDiv = document.createElement("div");
+  const backcardDiv = document.createElement("div");
 
-  myDiv.appendChild(myCard);
-  myDiv.appendChild(theInput);
+  cardDiv.setAttribute("class", "card");
+  backcardDiv.setAttribute("class", "backcard");
 
-  //   var theName = document.createElement("input");
-  //   theName.setAttribute("type", "text");
-  //   theName.setAttribute("name", element);
-  //   theName.append("Hello");
+  cardDiv.appendChild(cardImage);
+  backcardDiv.appendChild(backcardImage);
 
-  myCard.appendChild(thePic);
-  //   myDiv.appendChild(theName);
-
-  cardContainer.appendChild(myDiv);
-  cardContainer.appendChild(myDiv);
-  console.log(element);
+  cardContainer.appendChild(cardDiv);
+  cardContainer.appendChild(backcardDiv);
 }
+
+// next part of input div
+// var myDiv = document.createElement("div");
+// myDiv.setAttribute("id", "input");
+
+// var myCard = document.createElement("div");
+// myCard.setAttribute("class", "card");
+
+// var thePic = document.createElement("img");
+// thePic.setAttribute("src", `image/${element}.PNG`);
+// thePic.setAttribute("alt", "");
+
+// var myCard2 = document.createElement("div");
+// myCard2.setAttribute("class", "backcard");
+// // myCard2.style.width = "220px"; // Set the width
+// // myCard2.style.height = "300px"; // Set the height
+// myCard2.style.borderRadius = "10px";
+
+// var thePic2 = document.createElement("img");
+// thePic2.setAttribute("src", `image/the-godfather-eps-vector-logo.PNG`);
+// // thePic2.setAttribute("alt", "");
+// // thePic2.style.width = "100%"; // Set the image width to fill the parent div
+// // thePic2.style.height = "100%";
+// // myCard2.style.backgroundColor = "#1D1D1B";
+
+// myCard.appendChild(thePic2);
+// myCard2.appendChild(thePic);
+
+// var theInput = document.createElement("input");
+// theInput.setAttribute("type", "text");
+// theInput.setAttribute("placeholder", "Enter Your Name");
+
+// myDiv.appendChild(myCard);
+// myDiv.appendChild(myCard2);
+// myDiv.appendChild(theInput);
+
+// //   var theName = document.createElement("input");
+// //   theName.setAttribute("type", "text");
+// //   theName.setAttribute("name", element);
+// //   theName.append("Hello");
+
+// //   myDiv.appendChild(theName);
+
+// cardContainer.appendChild(myDiv);
+// console.log(element);
+// }

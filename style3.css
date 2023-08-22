@@ -6,24 +6,62 @@
 body {
   background-color: gray;
 }
-img{
+img {
   width: 220px;
   height: 300px;
   border-radius: 10px;
 }
-#input{
+#input {
   padding: 10px;
 }
-input{
+input {
   padding: 10px;
   border-radius: 10px;
 }
-.maincontainer{
+.maincontainer {
   margin-left: 20px;
   margin-top: 20px;
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
 }
-.card_container{
- flex-wrap: wrap;
+.maincontainer:hover > .card_container {
+  cursor: pointer;
+  transform: rotateY(180deg);
+  transition: transform 1500ms;
+  transform-style: preserve-3d;
+}
+.card_container {
+  flex-wrap: wrap;
   display: flex;
   gap: 5px;
+  position: relative;
+}
+
+.card,
+.backcard {
+  width: 220px;
+  height: 300px;
+  border-radius: 10px;
+  position: absolute;
+  backface-visibility: hidden;
+}
+.card {
+  width: 220px;
+  height: 300px;
+  background-color: #1d1d1b;
+}
+.backcard {
+  transform: rotateY(180deg);
+}
+.in{
+  margin-top: 10px;
+  margin-left: 32px;
+}
+input{
+  background-color: #1d1d1b;
+  text-align: center;
+  /* box-shadow: 0px 0px 5px black; */
+  border: none;
+  padding: 15px;
 }
