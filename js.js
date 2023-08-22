@@ -29,7 +29,6 @@ button.addEventListener("click", function () {
   });
   const data = { key: ids };
   localStorage.setItem("myData", JSON.stringify(data));
-  console.log(ids);
   window.location.href = "thirdpage.html";
 });
 
