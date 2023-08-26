@@ -23,9 +23,10 @@ input {
   margin-top: 20px;
   width: 220px;
   height: 300px;
+  margin-top: 90px;
   border-radius: 10px;
 }
-.maincontainer:hover > .card_container {
+.card_container_click {
   cursor: pointer;
   transform: rotateY(180deg);
   transition: transform 1500ms;
@@ -54,14 +55,21 @@ input {
 .backcard {
   transform: rotateY(180deg);
 }
-.in{
+.in {
   margin-top: 10px;
   margin-left: 32px;
 }
-input{
+input {
   background-color: #1d1d1b;
   text-align: center;
   /* box-shadow: 0px 0px 5px black; */
   border: none;
   padding: 15px;
+  margin-top: 330px;
+  margin-left: 10px;
+  color: white;
+}
+#content {
+  display: flex;
+  flex-wrap: wrap;
 }

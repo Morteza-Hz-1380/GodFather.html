@@ -11,9 +11,11 @@ const storedData = JSON.parse(localStorage.getItem("myData"));
 const items = [];
 items.push(...storedData.key);
 
+const contentDiv = document.getElementById("content");
+
 shuffleStrings(items);
 
-const cardContainer = document.querySelector(".card_container");
+// const cardContainer = document.querySelector(".card_container");
 for (let index = 0; index < items.length; index++) {
   const element = items[index];
 
@@ -32,8 +34,33 @@ for (let index = 0; index < items.length; index++) {
   cardDiv.appendChild(cardImage);
   backcardDiv.appendChild(backcardImage);
 
+  const cardContainer = document.createElement("div");
+  cardContainer.setAttribute("class", "card_container");
   cardContainer.appendChild(cardDiv);
   cardContainer.appendChild(backcardDiv);
+  cardContainer.addEventListener("click", () => {
+    // cardContainer.setAttribute("class", "card_container_click");
+    if (cardContainer.classList.contains("card_container_click")) {
+      cardContainer.classList.remove("card_container_click");
+      // cardContainer.setAttribute()
+    } else {
+      cardContainer.classList.add("card_container_click");
+    }
+  });
+
+  const input = document.createElement("input");
+  input.setAttribute("type", "text");
+
+  // Prevent click propagation from input to parent elements
+  input.addEventListener("click", function (event) {
+    event.stopPropagation();
+  });
+
+  const maincontainer = document.createElement("div");
+  maincontainer.setAttribute("class", "maincontainer");
+  maincontainer.appendChild(cardContainer);
+  maincontainer.appendChild(input);
+  contentDiv.appendChild(maincontainer);
 }
 
 // next part of input div
