@@ -73,3 +73,14 @@ input {
   display: flex;
   flex-wrap: wrap;
 }
+button{
+  padding: 20px 50px;
+  border-radius: 20px;
+  border: none ;
+  margin-left: 83%;
+  color: white;
+  background-color: black;
+}
+.di{
+  margin-top: -10%;
+}

@@ -1,0 +1,54 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+body {
+  background-color: gray;
+}
+tr > td {
+  border: 2px solid black;
+  padding: 20px 400px;
+}
+table {
+  margin: 16px;
+  width: 80%;
+}
+.selected {
+  background-color: rgb(155, 22, 22);
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.all {
+  display: flex;
+  gap: 30px;
+  margin: 16px;
+}
+.input-container {
+  margin-top: 100px;
+  width: 500px;
+  height: 500px;
+  border: none;
+}
+.select {
+  background-color: yellow;
+  color: black;
+}
